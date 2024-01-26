@@ -1,0 +1,74 @@
+:root {
+    --lightBlue: rgb(108, 176, 249);
+    --lightBlue_clear: rgba(108, 176, 249, 0.66);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0f0f;
+}
+
+.homepage {
+    max-width: 100vw;
+    height: 100vh;
+    background: brown;
+}
+
+.homepage__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    & img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    & .homescreen {
+        width: 100%;
+        height: calc(100% - 5%);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    & nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 5%;
+        padding: 0 2%;
+        z-index: 100;
+        background-color: var(--lightBlue_clear);
+        border-top: solid 0.1px var(--lightBlue);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.homemenu-logo {
+    width: 2.7%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 2%;
+    border: solid 0.1px #ffffff;
+    display: flex;
+    place-content: center;
+    & .homemenu-logo__inner {
+        width: 90%;
+        height: 90%;
+        position: relative;
+    }
+}
+
+.homemenu-date {
+
+}
