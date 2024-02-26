@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     background: #0f0f0f;
 }
 
@@ -33,7 +34,7 @@ body {
     }
     & .homescreen {
         width: 100%;
-        height: calc(100% - 5%);
+        height: 100%;
         position: absolute;
         top: 0;
         z-index: 1;
@@ -44,6 +45,8 @@ body {
         width: 100%;
         height: 5%;
         padding: 0 2%;
+        min-height: 36px;
+        max-height: 40px;
         z-index: 100;
         background-color: var(--lightBlue_clear);
         border-top: solid 0.1px var(--lightBlue);
@@ -57,6 +60,10 @@ body {
 .homemenu-logo {
     width: 2.7%;
     height: 90%;
+    min-width: 34px;
+    max-width: 40px;
+    min-height: 34px;
+    max-height: 40px;
     background-color: rgba(255, 255, 255, 0.63);
     border-radius: 2%;
     border: solid 0.1px #ffffff;
@@ -69,6 +76,29 @@ body {
     }
 }
 
-.homemenu-date {
+.homemenu-apps {
+    width: 100%;
+    height: 100%;
+    padding: 0 1%;
+}
 
+.homemenu-calender {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    & .homemenu-calender__time, .homemenu-calender__date {
+        width: 100%;
+        height: 50%;
+        font-size: 0.8rem;
+        color: #ffffff;
+        cursor: pointer; 
+        text-align: center;   
+    }
+    &:hover {
+        /* border: solid 1px rgba(199, 199, 199, 0.19); */
+        background: rgba(199, 199, 199, 0.62);
+    }
 }
