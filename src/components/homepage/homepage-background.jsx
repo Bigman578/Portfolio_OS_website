@@ -1,9 +1,8 @@
 import React from 'react'
 import '../../css/main.css'
-
+import background from '../../img/img0.jpg'
 
 function Background_img() {
-    const background = '../../img/img0.jpg';
 
     return(
         <>
