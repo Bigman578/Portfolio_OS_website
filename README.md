@@ -39,33 +39,42 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="https://github.com/Bigman578" target="_blank">Author</a>
 </p>
 
 <br>
 
 ## :dart: About ##
 
-Describe your project
+This project is a work in progress of a deskop inspirated portfolio for future Job application. The point of this project is to show my abilities using a highly advanced website with lots of similarities to a computer both in functionality and design. 
+
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+<i>Features are yet to be implemented but is a W.I.P</i>
+
+:heavy_check_mark: Window management with different information on each;\
+:heavy_check_mark: Making "apps" that both show my other projects and some entertainment;\
+:heavy_check_mark: Lots of customisation on the website;\
+:heavy_check_mark: Allowing you to check stuff through a window or by going into the website itself;
+
+...and possibly more to come
+
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
 - HTML/CSS
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
 - Javascript
+- [React](https://pt-br.reactjs.org/)
+- [React Vite](https://vitejs.dev)
+
 
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
 
 ## :checkered_flag: Starting ##
 
@@ -85,12 +94,13 @@ $ yarn start
 # The server will initialize in the <http://localhost:3000>
 ```
 
+
 ## :memo: License ##
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/Bigman578" target="_blank">Bigman578</a>
 
 &#xa0;
 

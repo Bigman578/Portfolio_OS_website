@@ -1,7 +1,8 @@
 import React from "react";
-import '../../css/main.css'
-import '../../css/window.css'
-import Windowcreate from '../windowProduction/windowCreation.jsx'
+import App_test from "../application/application-show.jsx";
+import '../../css/main.css';
+import '../../css/window.css';
+
 
 
 function Mainpage() {
@@ -9,7 +10,7 @@ function Mainpage() {
 
     return (
         <div className="homescreen">
-            <Windowcreate></Windowcreate>
+            <App_test></App_test>
         </div>
     )
 }

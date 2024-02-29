@@ -37,6 +37,8 @@ body {
         position: absolute;
         top: 0;
         z-index: 1;
+        padding: 10px;
+        padding-bottom: 40px;
     }
     & nav {
         position: absolute;
@@ -98,6 +100,6 @@ body {
     }
     &:hover {
         /* border: solid 1px rgba(199, 199, 199, 0.19); */
-        background: rgba(199, 199, 199, 0.62);
+        background: rgba(141, 191, 245, 0.66);
     }
 }
