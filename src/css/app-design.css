@@ -1,0 +1,35 @@
+.App-Container {
+    width: 63px;
+    height: 73px;
+    margin: 20px;
+    
+    &:hover {
+        .App-Container__inner {
+            background: rgba(199, 199, 199, 0.52);
+            /* border: rgba(199, 199, 199, 0.19) solid 1px; */
+        }
+    }
+}
+
+.App-Container__inner {
+    width: 100%;
+    height: calc(100% - 10px);
+    padding: 7px;
+    position: relative;
+    cursor: pointer;
+    & .imagetest {
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+        position: absolute;
+    }
+}
+
+.App-name {
+    font-size: 0.6rem;
+    text-align: center;
+    color: #f3f3f3;
+    margin-top: 4px;
+    cursor: default;
+    user-select: none;
+}

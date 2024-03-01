@@ -1,7 +1,7 @@
 import '../../css/window.css'
 import React from 'react'
 
-function Windowcreate() {
+function Windowcreate({ children }) {
 
 
     return (
@@ -19,7 +19,7 @@ function Windowcreate() {
                 </button>
             </div>
             <div className="prototype-window__inner">
-                
+                {children}
             </div>
         </div>
         </>
