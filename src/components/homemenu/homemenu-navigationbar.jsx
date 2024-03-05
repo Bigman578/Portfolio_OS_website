@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import PopupNav from './homemenu-popupmenu'
 import '../../css/main.css'
 
 function Navigation() {
@@ -21,12 +22,18 @@ function Navigation() {
         return () => clearInterval(interval)
     }, [])
 
-    
+    const [openMenu, setopenMenu] = useState(false);
 
+    const toggleMenu = () => {
+        setopenMenu(!openMenu)
+    };
+    
+    
     return(
         <>
             <nav>
-                <div className="homemenu-logo" id="Homemenu-btn">
+                {openMenu && <PopupNav></PopupNav>}
+                <div className="homemenu-logo" onClick={toggleMenu}>
                     <div className="homemenu-logo__inner">
                         
                     </div>
@@ -42,5 +49,7 @@ function Navigation() {
         </>
     );
 }
+
+
 
 export default Navigation

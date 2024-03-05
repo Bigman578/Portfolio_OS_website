@@ -70,6 +70,7 @@ body {
     border: solid 0.1px #ffffff;
     display: flex;
     place-content: center;
+    cursor: pointer;
     & .homemenu-logo__inner {
         width: 90%;
         height: 90%;
@@ -96,7 +97,8 @@ body {
         font-size: 0.8rem;
         color: #ffffff;
         cursor: pointer; 
-        text-align: center;   
+        text-align: center;
+        user-select: none;
     }
     &:hover {
         /* border: solid 1px rgba(199, 199, 199, 0.19); */

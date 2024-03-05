@@ -8,6 +8,7 @@
     width: 65%;
     height: 70%;
     background: var(--darkBlue);
+    backdrop-filter: blur(34.8px);
     border: 1px var(--darkBlueBorder) solid;
     position: relative;
     transform: translate(350px, 70px);
