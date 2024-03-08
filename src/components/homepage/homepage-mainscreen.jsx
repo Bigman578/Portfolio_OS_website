@@ -10,11 +10,17 @@ function Mainpage() {
 
 
     return (
+        <>
         <div className="homescreen">
             <App_test></App_test>
             <App_test></App_test>
             <App_test></App_test>
+            <Windowcreate></Windowcreate>
         </div>
+        
+        </>
+        
+
     )
 }
 

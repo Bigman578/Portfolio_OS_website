@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PopupNav from './homemenu-popupmenu'
+
 import '../../css/main.css'
 
 function Navigation() {
 
     const [time, setTime] = useState('')
     const [date, setDate] = useState('')
+    const [openMenu, setopenMenu] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -22,18 +24,34 @@ function Navigation() {
         return () => clearInterval(interval)
     }, [])
 
-    const [openMenu, setopenMenu] = useState(false);
 
-    const toggleMenu = () => {
+    const toggleMenu = (event) => {
+        event.stopPropagation();
         setopenMenu(!openMenu)
     };
+
+    const clickOutsideMenu = (event) => {
+            if (!event.target.closest('.main-nav') && openMenu) {
+                setopenMenu(false)
+            }
+        }
+
+
+    useEffect(() => {
+        document.addEventListener('click', clickOutsideMenu)
+
+        return () => {
+            document.removeEventListener('click', clickOutsideMenu)
+        }
+    }, [openMenu])
     
+
     
     return(
         <>
             <nav>
                 {openMenu && <PopupNav></PopupNav>}
-                <div className="homemenu-logo" onClick={toggleMenu}>
+                <div className="homemenu-logo" onClick={(event) => toggleMenu(event)}>
                     <div className="homemenu-logo__inner">
                         
                     </div>
@@ -49,7 +67,6 @@ function Navigation() {
         </>
     );
 }
-
 
 
 export default Navigation

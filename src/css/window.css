@@ -10,13 +10,16 @@
     background: var(--darkBlue);
     backdrop-filter: blur(34.8px);
     border: 1px var(--darkBlueBorder) solid;
-    position: relative;
-    transform: translate(350px, 70px);
+    position: absolute;
+    /* transform: translate(350px, 70px); */
+    top: 70px;
+    left: 350px;
     border-radius: 17px;
     padding: 6px 7px;
     display: flex;
     flex-direction: column;
     gap: 7px;
+    z-index: 2;
     & .prototype-window__inner {
         width: 100%;
         height: 95%;

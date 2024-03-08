@@ -9,6 +9,7 @@
     padding-top: 22px;
     position: absolute;
     top: calc(var(--nav-height) * -1);
+    left: 0;
     background: rgba(46, 46, 46, 0.66);
     backdrop-filter: blur(16.2px);
     border: solid #2e2e2e 1px;
@@ -104,13 +105,36 @@
     padding-top: 45px;
     margin-top: 50px;
     & .profile {
-        width: 70px;
-        height: 70px;
+        width: 73px;
+        height: 73px;
         border-radius: 5px;
         background: #f3f3f3;
         position: absolute;
         top: -45px;
         left: 30px;
+        & img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            padding: 3px;
+            border-radius: 5px;
+        }
+    }
+    & .contact-info {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        background: rgba(0, 85, 138, 0.51);
+        border: solid 1px rgba(0, 131, 212, 0.47);
+        border-radius: 1px 1px 4px 4px;
+        padding: 5px 0;
+        & p {
+            & a {
+                color: #f3f3f3;
+                text-decoration: none;
+            }
+        }
     }
     & p {
         width: 100%;
@@ -122,5 +146,10 @@
         &:hover {
             border: solid 1px rgba(199, 199, 199, 0.19);
         }
+    }
+    & hr {
+        width: 100%;
+        background: #474747;
+        color: #474747;
     }
 }
