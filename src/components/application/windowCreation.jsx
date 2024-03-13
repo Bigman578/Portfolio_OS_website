@@ -1,49 +1,65 @@
 import '../../css/window.css'
-import React, { useState ,useEffect} from 'react'
+import React, { useState , useEffect } from 'react'
 
 function Windowcreate({ children }) {
     const [isHeld, setIsHeld] = useState(false);
     const [windowPosition, setWindowPosition] = useState({x: 0, y: 0});
     const [offset, setOffset] = useState({x: 0, y: 0});
+    const window = document.querySelector('.prototype-window')
 
     const handleWindowStart = (event) => {
-        setIsHeld(true);
-        setOffset({
-            x: event.clientX - windowPosition.x,
-            y: event.clientY - windowPosition.y
-        });
+        if (event.target.className === 'prototype-window') {
+            setIsHeld(true);
+            setOffset({
+                x: event.clientX - windowPosition.x,
+                y: event.clientY - windowPosition.y
+            });
+        }
+        console.log(event.target.className)
     }
     
     const handleWindowDrag = (event) => {
-        if (!isHeld) return;
+        if (!isHeld) {return};
         const newX = event.clientX - offset.x;
         const newY = event.clientY - offset.y;
         setWindowPosition({ x: newX, y: newY});
-        console.log(windowPosition)
+
     }
 
     const handleWindowStop = (event) => {
-        setIsHeld(false);
+        if (isHeld){
+            setIsHeld(false);        
+            const newX = event.clientX - offset.x;
+            const newY = event.clientY - offset.y;
+            console.log(newX, newY)
+            setWindowPosition({ x: newX, y: newY});
+        }
+    }
 
-        const newX = event.clientX - offset.x;
-        const newY = event.clientY - offset.y;
-        setWindowPosition({ x: newX, y: newY});
-
+    const closeWindow = () => {
+        document.querySelector('.prototype-window')
+        alert('closed')
     }
 
     useEffect(()=>{
-
         const window = document.querySelector('.prototype-window')
-        console.log('x: ' + window.style.left  + ', y: ' + window.style.top)
+        console.log(window.transform)
         console.log(windowPosition)
+        console.log(offset)
 
     },[windowPosition])
 
     
     return (
-        <div className="prototype-window" style={{top: windowPosition.y + 70 + 'px', left: windowPosition.x+ 350 + 'px'}} draggable={true} onDragStart={handleWindowStart} onDrag={handleWindowDrag} onDragEnd={handleWindowStop}>
+            <div 
+            className="prototype-window"
+            style={{transform: `translate(${windowPosition.x}px, ${windowPosition.y}px)`}}
+            onMouseDown={handleWindowStart}
+            onMouseMove={handleWindowDrag} 
+            onMouseUp={handleWindowStop}
+            >
             <div draggable={false} className="prototype-window__buttons">
-                <button className="prototype-window__close">
+                <button className="prototype-window__close" onClick={closeWindow}>
                     <i className="fa-solid fa-xmark"></i>
                 </button>
                 <button className="prototype-window__resize">
@@ -59,7 +75,6 @@ function Windowcreate({ children }) {
         </div>
     );
 }
-
 
 
 export default Windowcreate

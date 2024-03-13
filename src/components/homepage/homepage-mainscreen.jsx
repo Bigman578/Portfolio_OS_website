@@ -7,7 +7,7 @@ import '../../css/window.css';
 
 
 function Mainpage() {
-
+    
 
     return (
         <>
@@ -15,6 +15,7 @@ function Mainpage() {
             <App_test></App_test>
             <App_test></App_test>
             <App_test></App_test>
+            <Windowcreate></Windowcreate>
             <Windowcreate></Windowcreate>
         </div>
         
