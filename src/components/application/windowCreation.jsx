@@ -58,7 +58,7 @@ function Windowcreate({ children }) {
             onMouseMove={handleWindowDrag} 
             onMouseUp={handleWindowStop}
             >
-            <div draggable={false} className="prototype-window__buttons">
+            <div className="prototype-window__buttons">
                 <button className="prototype-window__close" onClick={closeWindow}>
                     <i className="fa-solid fa-xmark"></i>
                 </button>
@@ -69,7 +69,7 @@ function Windowcreate({ children }) {
                     <i className="fa-solid fa-window-minimize"></i>
                 </button>
             </div>
-            <div draggable={false} className="prototype-window__inner">
+            <div className="prototype-window__inner">
                 {children}
             </div>
         </div>
