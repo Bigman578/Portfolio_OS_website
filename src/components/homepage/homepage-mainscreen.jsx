@@ -12,20 +12,20 @@ import AdminHome from '../../img/021.png'
 function Mainpage() {
     
     const [Portfolio, setPortfolio] = useState(false)
+    const [Apps, setApps] = useState(false)
     
     
     return (
         <>
         <div className="homescreen">
             <DesktopApp icon={DesktopInternet} AppName='Internet'></DesktopApp>
-            <DesktopApp icon={Folder} AppName='Folder'></DesktopApp>
-            <DesktopApp icon={AdminHome} AppName='Home'></DesktopApp>
-            <Windowcreate></Windowcreate>
-            <Windowcreate></Windowcreate>
+            <DesktopApp icon={Folder} AppName='Folder' windowOpen={setApps}></DesktopApp>
+            <DesktopApp icon={AdminHome} AppName='Portfolio' windowOpen={setPortfolio}></DesktopApp>
+            {Portfolio && <Windowcreate closeWindow={setPortfolio}>Portfolio</Windowcreate>}
+            {Apps && <Windowcreate closeWindow={setApps}>Apps</Windowcreate>}
         </div>
         
         </>
-
     )
 }
 

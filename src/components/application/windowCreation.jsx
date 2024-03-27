@@ -1,7 +1,7 @@
 import '../../css/window.css'
 import React, { useState , useEffect } from 'react'
 
-function Windowcreate({ children }) {
+function Windowcreate({children, closeWindow}) {
     const [isHeld, setIsHeld] = useState(false);
     const [windowPosition, setWindowPosition] = useState({x: 0, y: 0});
     const [offset, setOffset] = useState({x: 0, y: 0});
@@ -36,9 +36,8 @@ function Windowcreate({ children }) {
         }
     }
 
-    const closeWindow = () => {
-        document.querySelector('.prototype-window')
-        alert('closed')
+    const removeWindow = () => {
+        closeWindow(false)
     }
 
     useEffect(()=>{
@@ -59,7 +58,7 @@ function Windowcreate({ children }) {
             onMouseUp={handleWindowStop}
             >
             <div className="prototype-window__buttons">
-                <button className="prototype-window__close" onClick={closeWindow}>
+                <button className="prototype-window__close" onClick={removeWindow}>
                     <i className="fa-solid fa-xmark"></i>
                 </button>
                 <button className="prototype-window__resize">
