@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DesktopApp from "../application/application-show.jsx";
 import Windowcreate from "../application/windowCreation.jsx";
 import '../../css/main.css';
@@ -11,7 +11,9 @@ import AdminHome from '../../img/021.png'
 
 function Mainpage() {
     
-
+    const [Portfolio, setPortfolio] = useState(false)
+    
+    
     return (
         <>
         <div className="homescreen">
@@ -23,7 +25,6 @@ function Mainpage() {
         </div>
         
         </>
-        
 
     )
 }
