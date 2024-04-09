@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../css/app-design.css'
-import icontest from '../../img/computer.png'
 
 function DesktopApp({icon, AppName, windowOpen}) {
     return (
