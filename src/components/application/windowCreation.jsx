@@ -1,11 +1,12 @@
 import '../../css/window.css'
-import React, { useState , useEffect } from 'react'
+import React, { useState , useEffect, Children } from 'react'
+import Portfolio from './Apps/MyPortfolio.jsx'
 
-function Windowcreate({children, closeWindow}) {
+function Windowcreate({children, closeWindow, windowSize}) {
     const [isHeld, setIsHeld] = useState(false);
     const [windowPosition, setWindowPosition] = useState({x: 0, y: 0});
     const [offset, setOffset] = useState({x: 0, y: 0});
-    const window = document.querySelector('.prototype-window')
+    // const window = document.querySelector('.prototype-window')
 
     const handleWindowStart = (event) => {
         if (event.target.className === 'prototype-window') {

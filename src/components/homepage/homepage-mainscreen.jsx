@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DesktopApp from "../application/application-show.jsx";
 import Windowcreate from "../application/windowCreation.jsx";
+import MyPortfolio from '../application/Apps/MyPortfolio.jsx'
 import '../../css/main.css';
 import '../../css/window.css';
 import DesktopInternet from '../../img/098.png'
@@ -21,7 +22,7 @@ function Mainpage() {
             <DesktopApp icon={DesktopInternet} AppName='Internet'></DesktopApp>
             <DesktopApp icon={Folder} AppName='Folder' windowOpen={setApps}></DesktopApp>
             <DesktopApp icon={AdminHome} AppName='Portfolio' windowOpen={setPortfolio}></DesktopApp>
-            {Portfolio && <Windowcreate closeWindow={setPortfolio}>Portfolio</Windowcreate>}
+            {Portfolio && <Windowcreate closeWindow={setPortfolio}><MyPortfolio/></Windowcreate>}
             {Apps && <Windowcreate closeWindow={setApps}>Apps</Windowcreate>}
         </div>
         

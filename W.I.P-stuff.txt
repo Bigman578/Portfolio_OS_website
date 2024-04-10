@@ -1,0 +1,14 @@
+Max screen:
+    width: 100%;
+    height: calc(100% - 40px); /*Rough extimate*/
+    turn off move option and reposition
+    save old position or put in original position
+
+Application:
+    Make app icon appear in navigation?
+    or
+    More navigation option
+
+Window:
+    Priority Window
+    
