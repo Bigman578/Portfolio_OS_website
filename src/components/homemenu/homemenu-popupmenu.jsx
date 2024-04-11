@@ -60,12 +60,12 @@ function PopupNav() {
                         <hr />
 
                         <p>Built-in Apps</p>
-                        <p>CV's</p>
+                        <p>CV('s)</p>
 
                         <hr />
 
                         <p>Settings</p>
-                        <p></p>
+                        <p>Instructions</p>
 
                     </div>
                 </div>

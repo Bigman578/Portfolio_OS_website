@@ -39,6 +39,16 @@
     position: absolute;
     top: 6px;
     right: 7px;
+    & .prototype-window__close, .prototype-window__resize, .prototype-window__minimize {
+        width: 46px;
+        height: 25px;
+        border: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.2s;
+    }
     & .prototype-window__close {
         border-radius: 0 11px 11px 0;
         background: rgba(245, 41, 41, 0.42);
@@ -57,16 +67,6 @@
                 transition: 0.2s;
             }
         }
-    }
-    & .prototype-window__close, .prototype-window__resize, .prototype-window__minimize {
-        width: 46px;
-        height: 25px;
-        border: none;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        cursor: pointer;
-        transition: 0.2s;
     }
     & .prototype-window__minimize {
         border-radius: 11px 0 0 11px;
