@@ -7,6 +7,7 @@ function Background_img() {
     return(
         <>
         <img 
+            className='background-image'
             src={background} 
             alt="homepage_background" 
         />
