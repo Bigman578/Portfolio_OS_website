@@ -1,0 +1,91 @@
+.add--container__first {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    max-width: 1208px;
+    margin: 30px auto;
+    background: #f3f3f3;
+
+    & img {
+        width: 100%;
+    }
+}
+.column--add__first {
+    height: 500px;
+    &.one {
+        grid-area: 1 / 1 / 2/ 7;
+        background: url(../img/airpods.webp);
+    }
+    &.two {
+        grid-area: 1 / 7 / 2/ 13;
+        background: url(../img/TV.webp);
+    }
+}
+
+.add--container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    max-width: 1208px;
+    margin: 0 auto;
+    background: #f3f3f3;
+
+    & img {
+        width: 100%;
+    }
+}
+.top--add {
+    grid-area: 1 / 1 / 2/ 13;
+}
+.column--add {
+    height: 500px;
+    &.one {
+        grid-area: 2 / 1 / 3/ 7;
+        background: url(../img/waffle.webp);
+       
+    }
+    &.two {
+        grid-area: 2 / 7 / 3/ 13;
+        background:url(../img/lufrrenare.webp);
+    }
+}
+.bottom--add{
+    grid-area: 3 / 1 / 4 / 13;
+}
+
+@media only screen and (max-width: 900px) {
+   .add--container {      
+      width: 100vw;
+      height: auto;
+   }
+   .column--add__first {
+
+      &.one {
+         width: 100vw;
+      }
+
+      &.two {
+         display: none;
+      }
+   }
+   
+   .column--add{
+      &.one {
+         width: 100vw;
+         height: 500px;
+         object-fit: contain;
+      } 
+      &.two {
+         display: none;
+      }
+   }
+
+   .top--add {
+      width: 100vw;
+   }
+   .bottom--add {
+      width: 100vw;
+   }
+}

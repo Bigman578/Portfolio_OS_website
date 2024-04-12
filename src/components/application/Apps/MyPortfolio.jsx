@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 import '../../../css/application_design/portfolio.css'
 
 function MyPortfolio() {
@@ -11,19 +13,23 @@ function MyPortfolio() {
                             <h3 className='name'>Bwar Mohammad</h3>
                             <p className='gamertag'>Also known as Bigman in some platforms</p>
                             <div className="contact-icons">
-                                <a target='_blank' href="https://github.com/Bigman578">Git</a>
-                                <a href="">Linked-In</a>
-                                <a href="">Mail</a>
-                                <a href="">some other platform?</a>
+                                <a target='_blank' href="https://github.com/Bigman578"><FaGithub size='1.5em' color='#0f0f0f' /></a>
+                                <a target='_blank' href=""><FaLinkedin size='1.5em' color='#0f0f0f' /></a>
+                                <a href="mailto:bwar62@gmail.com"><IoIosMail size='1.5em' color='#0f0f0f' /></a>
+                                {/* <a href="">some other platform?</a> */}
+                            </div>
+                            <div className="image-self">
+                                <img className='selfPortrait' src="" alt="profile_pic" />
                             </div>
                         </div>
+                        {/*Possible scroll mechanic added here for when more contant gets added*/ }
                     </div>
                     <div className='portfolio-information'>
                         <div className="information-self">
                             <h2>Hello there</h2>
                             I am a programmer working mostly with websites (at the moment) with the goal of working with machinery and possibly AI. I am born in Sweden and currently still live in Sweden. 
-                            I usually play games that needs creativity and inspiration for either industrial stuff like mass-production or more thinking situation where you solve a problem. <br /><br />
-                            With both of us working together we could work for a brighter future and achive new results
+                            Usually in my spare time I play games that needs creativity and inspiration for either industrial stuff like mass-production or more thinking situation where you solve a issue given. <br /><br />
+                            I hope in the future we could work together and make new success. 
                         </div>
                         <div className="information-skills">
                             <h3>Skills</h3>
