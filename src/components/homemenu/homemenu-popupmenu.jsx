@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import appicon from '../../img/computer.png'
 import '../../css/popup-nav-menu.css'
-
+import DesktopInternet from '../../img/098.png'
+import Folder from '../../img/011.png'
+import AdminHome from '../../img/021.png'
 
 function PopupNav() {
 
@@ -10,6 +12,8 @@ function PopupNav() {
     const toggleContact = () => {
         setcontactInfo(!contactInfo)
     }
+
+    
 
     return(
         <>
@@ -24,14 +28,14 @@ function PopupNav() {
                         </div>
                         <div className='navapp-container'>
                             <div className="navapp-container__inner">
-                                <img src={appicon} alt="appicon" />
-                                <p>app-name</p>
+                                <img src={Folder} alt="appicon" />
+                                <p>Past Work</p>
                             </div>
                         </div>
                         <div className='navapp-container'>
                             <div className="navapp-container__inner">
-                                <img src={appicon} alt="appicon" />
-                                <p>app-name</p>
+                                <img src={AdminHome} alt="appicon" />
+                                <p>Portfolio</p>
                             </div>
                         </div>
 

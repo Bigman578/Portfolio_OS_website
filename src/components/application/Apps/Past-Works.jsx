@@ -14,7 +14,7 @@ function Previouswork() {
                         <h4>Project_NetonNet</h4>
                         <p>A project focused entierly on recreating NetonNet to the ability of my classmates. In this project I was the Project leader for an extended duration working on it for 6 months. (This project has been altered because of React problems, the issue is still being looked into until a more better solution is found)</p>
                         <p>2023-2024</p>
-                        <button onClick={()=>{window.open('/public/Past_Projects/Project_NetonNet/index.html')}}>Open project in new tab</button>
+                        <button onClick={() => {window.open('/Past_Projects/Project_NetonNet/index.html')}}>Open project in new tab</button>
                     </div>
                 </div>
             </div>
