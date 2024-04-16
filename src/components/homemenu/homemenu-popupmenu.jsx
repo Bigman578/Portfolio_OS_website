@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { createContext, useState } from 'react'
 import appicon from '../../img/computer.png'
 import '../../css/popup-nav-menu.css'
 import DesktopInternet from '../../img/098.png'
@@ -13,7 +13,9 @@ function PopupNav() {
         setcontactInfo(!contactInfo)
     }
 
-    
+    const openPortfolio = () => {
+        const testContext = createContext(true)
+    }
 
     return(
         <>

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DesktopApp from "../application/application-show.jsx";
 import Windowcreate from "../application/windowCreation.jsx";
 import MyPortfolio from '../application/Apps/MyPortfolio.jsx';
 import Previouswork from "../application/Apps/Past-Works.jsx";
+import PopupNav from "../homemenu/homemenu-popupmenu.jsx";
 import '../../css/main.css';
 import '../../css/window.css';
 import '../../css/WIP.css'
@@ -13,9 +14,15 @@ import AdminHome from '../../img/021.png'
 
 
 function Mainpage() {
+
+    
     
     const [Portfolio, setPortfolio] = useState(false)
     const [Apps, setApps] = useState(false)
+
+    useEffect(() => {
+
+    }, [])
 
     
     return (
