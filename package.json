@@ -19,7 +19,7 @@
     "vite": "^5.2.10"
   },
   "scripts": {
-    "predeploy": "npm run dev",
+    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
