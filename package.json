@@ -1,5 +1,5 @@
 {
-  "homepage": "https://bigman578.github.io/Portfolio_OS_website/",
+  "homepage": "https://bigman578.github.io/Portfolio_OS_website",
   "name": "operatorsystem",
   "private": true,
   "version": "0.0.1",
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b master -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
