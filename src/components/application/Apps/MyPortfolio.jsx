@@ -13,8 +13,8 @@ function MyPortfolio() {
                             <h3 className='name'>Bwar Mohammad</h3>
                             <p className='gamertag'>Also known as Bigman in some platforms</p>
                             <div className="contact-icons">
-                                <a target='_blank' href="https://github.com/Bigman578"><FaGithub size='1.5em' color='#0f0f0f' /></a>
-                                <a target='_blank' href=""><FaLinkedin size='1.5em' color='#0f0f0f' /></a>
+                                <a target='_blank' href="https://github.com/Bigman578/"><FaGithub size='1.5em' color='#0f0f0f' /></a>
+                                <a target='_blank' href="https://www.linkedin.com/in/bwar-mohammad-333b3b247/"><FaLinkedin size='1.5em' color='#0f0f0f' /></a>
                                 <a href="mailto:bwar62@gmail.com"><IoIosMail size='1.5em' color='#0f0f0f' /></a>
                                 {/* <a href="">some other platform?</a> */}
                             </div>
