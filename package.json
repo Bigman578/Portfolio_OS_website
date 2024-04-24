@@ -13,6 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "dnd-kit": "^0.0.2",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
     "mime": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
