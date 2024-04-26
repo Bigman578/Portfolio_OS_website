@@ -61,6 +61,7 @@ function PopupNav() {
                             <p><a target='_blank' href="https://github.com/Bigman578">Github</a></p>
                             <p><a href="mailto:bwar62@gmail.com">Email</a></p>
                             <p><a href="telto:+46708847954">Phone</a></p>
+                            <p><a href="https://www.linkedin.com/in/bwar-mohammad-333b3b247/">LinkedIn</a></p>
                         </div>}
 
                         <hr />
