@@ -75,7 +75,7 @@
         }
     }
     & .prototype-window__resize, .prototype-window__minimize {
-        background: #0d2d68;
+        background: #0d2d689c;
         & i {
             font-size: 1rem;
             margin: 15px;
