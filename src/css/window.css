@@ -1,5 +1,5 @@
 :root {
-    --darkBlue: rgba(0, 113, 184, 0.51);
+    --darkBlue: rgba(0, 86, 139, 0.51);
     --darkBlueBorder: rgba(0, 73, 119, 0.47);
 
 }
@@ -51,7 +51,7 @@
     }
     & .prototype-window__close {
         border-radius: 0 11px 11px 0;
-        background: rgba(245, 41, 41, 0.42);
+        background: rgba(146, 12, 12, 0.616);
         & i {
             font-size: 1.25rem;
             margin: 10px;
@@ -75,7 +75,7 @@
         }
     }
     & .prototype-window__resize, .prototype-window__minimize {
-        background: rgba(194, 194, 194, 0.42);
+        background: #0d2d68;
         & i {
             font-size: 1rem;
             margin: 15px;

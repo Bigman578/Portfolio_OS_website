@@ -1,7 +1,7 @@
 import React from "react";
 import '../../../css/application_design/pastWork.css'
 
-function Previouswork() {
+function Previousproject() {
     return(
         <>
             <div className="main-prevWork">
@@ -22,4 +22,4 @@ function Previouswork() {
     );
 }
 
-export default Previouswork
+export default Previousproject
